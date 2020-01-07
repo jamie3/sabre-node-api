@@ -2,8 +2,8 @@ import express, { Request, Response, NextFunction } from "express";
 import { Headers } from "request";
 import parser from "xml2json";
 
-import sabreRequest from "./lib/sabre-request";
-import tokenCreateRequest from "./lib/token-create-request";
+import sabreRequest from "../lib/sabre-request";
+import tokenCreateRequest from "../lib/token-create-request";
 
 const router = express.Router();
 const headers: Headers = {

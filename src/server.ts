@@ -1,7 +1,7 @@
 import bodyParser from "body-parser";
 import express from "express";
 
-import CreateTokenRQ from "./create-token-rq.route";
+import CreateTokenRQ from "./routes/create-token-rq.route";
 
 const app = express();
 const port = process.env.PORT || 3000;
