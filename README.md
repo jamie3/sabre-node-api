@@ -1,6 +1,6 @@
 # Sabre Node API
 
-A collection of Sabre SOAP APIs exposed via a simpler RESTful API within a node app. I f***in hate soap, so this alleviates some of the pain.
+A collection of Sabre SOAP APIs exposed via a simpler RESTful API within a node app. I f***in hate soap, so this alleviates some of the pain. This is actively under development so please do not use it in production.
 
 ## Start
 
