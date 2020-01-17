@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev": "cross-env TZ=UTC nodemon -e ts,js,json --exec node -r ts-node/register --inspect=:9228 src/server.ts",
-    "start": "TZ=UTC NODE_ENV=production build/server.js",
+    "start": "cross-env TZ=UTC NODE_END=development nodemon -e ts,js,json --exec node -r ts-node/register --inspect=:9228 src/server.ts",
+    "start:production": "TZ=UTC NODE_ENV=production build/server.js",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix"
   },
   "dependencies": {
