@@ -1,7 +1,6 @@
-import bodyParser from "body-parser";
-import express from "express";
+import express, { NextFunction } from "express";
 
-import CreateTokenRQ from "./routes/create-token-rq.route";
+import routes from "./routes";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -15,9 +14,10 @@ app.get( "/health", ( req, res ) => {
     } );
 } );
 
-app.use(CreateTokenRQ);
+app.use(routes.CreateTokenRouter);
+app.use(routes.VCRDisplayRouter);
 
 app.listen( port, () => {
     // eslint-disable-line no-console
-    // console.log(`server started at http://localhost:${ port }`);
+    console.log(`server started at http://localhost:${ port }`);
 } );
